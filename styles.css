@@ -73,7 +73,7 @@ main {
     border-radius: 1rem;
     margin: 0 auto;
     padding: 1rem;
-    max-width: 22.375rem;
+    max-width: 28rem;
 }
 
 .cactus-mobile-img {
@@ -81,6 +81,12 @@ main {
     height: auto;
     max-width: 21rem;
     margin-block-end: 1rem;
+}
+
+.cactus-tablet-desktop-img {
+    display: none;
+    margin-block-end: 1rem;
+    border-radius: 0.5rem;
 }
 
 .design-pill {
@@ -122,4 +128,16 @@ hr {
 
 .author-info a {
     text-decoration: none;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 51.25rem) {
+    .cactus-mobile-img {
+        display: none;
+    }
+
+    .cactus-tablet-desktop-img {
+        display: block;
+    }
 }
